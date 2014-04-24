@@ -23,9 +23,11 @@ makeCacheMatrix <- function(x = matrix()) {
          getMatrixInverse = getMatrixInverse)   
 }
 
-
-## Write a short comment describing this function
-
+## This function retrieves the matrix inverse value
+## from the cache if it exits. In case the inverse of
+## a matrix does not exist in the cache, the function
+## calculates it and store the result in the cache and
+## returns the value calculated.
 cacheSolve <- function(x, ...) {
     # check if the inverse is already cached
     mtxInv <- x$getMatrixInverse()
